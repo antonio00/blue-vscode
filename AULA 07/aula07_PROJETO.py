@@ -4,7 +4,8 @@ def custo_hotel():
     print(f'O custo de hospedagem é de: R${custoTotal:.2f}')
 
 
-def custo_aviao():
+
+
     
 
 
@@ -16,11 +17,18 @@ def custo_carro():
     desc1 = 50
     desc2 = 20
     total = dias * diaria
+    p1 = total - desc1
+    p2 = total - desc2
     if dias >= 7:
-        print(f'Total do aluguel é de: R${(total - desc1)}')
+        print(f'Total do aluguel é de: R${(p1)}')
     elif dias >= 3 < 7:
-        print(f'Total do aluguel é de: R${(total - desc2)}')
+        print(f'Total do aluguel é de: R${(p2)}')
     else:
         print(f'Total do aluguel é de: R${total}')
 
 
+
+custo_hotel()
+custo_carro()
+pacote = custo_hotel + custo_carro
+print(pacote)
