@@ -36,9 +36,9 @@
 
 # lista =[3,4,6,7]
 # lista[0]=1
-# lista.append(9) # add o valor() nao ultima posicao
+# lista.append(9) # add o valor() nao ultima posicao. 
 # lista.insert(2,5) # add o valor na o valor 5 no index 2, NAO SUBSTITUI
-# del lista[0] #apaga o valor da posição 0
+# del lista[0] #apaga o valor da posição 0. pode apagar por intervalo tambem
 # print(lista)
 
 # lista =[3,4,6,7]
@@ -56,10 +56,17 @@
 # del lista[1:4] #apaga por intervalo
 # print(lista)
 
-lista =[3,4,6,7]
-lista[0]=1
-lista.append(9) # add o valor() nao ultima posicao
-lista.insert(2,5) # add o valor na o valor 5 no index 2, NAO SUBSTITUI
-del lista[0] #apaga o valor da posição 0
-list.pop() # sem posicao informada() apaga ultimo item da lista
-print(lista)
+# lista =[3,4,6,7]
+# lista[0]=1
+# lista.append(9) # add o valor() nao ultima posicao
+# lista.insert(2,5) # add o valor na o valor 5 no index 2, NAO SUBSTITUI
+# del lista[0] #apaga o valor da posição 0
+# list.pop() # sem posicao informada() apaga ultimo item da lista
+
+# # #if X in lista:
+# #     lista.remove() # remove valor da lista [ aconselhavel utilizar if para o .remove, para evitar erros]
+# #     print(lista)
+# # else:
+# #     print('O valor X, nao existe na lista')
+
+# print(lista)
