@@ -5,6 +5,8 @@ class Pokemon:
         self.ataquePoke = ataque
         self.defesaPoke = defesa
 
+    def extrato(self):
+        print(f'Seu saldo é {self.saldo}')
 
     def atacar(self, valorAtaque):
         self.ataquePoke -= valorAtaque
