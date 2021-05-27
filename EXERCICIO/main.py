@@ -9,6 +9,6 @@ from conta import Conta
 nome = str(input('Digite o nome do titular: '))
 c1 = Conta(nome)
 
-saque = int(input('Digite o valor do saque: R$'))
+saque = float(input('Digite o valor do saque: R$'))
 c1.saque(saque)
 
