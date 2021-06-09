@@ -6,17 +6,17 @@ class Conta:
     
     def saque(self,valorS):
         if valorS != 0:
-            if self.saldo >= valorS:
-                self.saldo -= valorS
+            if self.__saldo >= valorS:
+                self.__saldo -= valorS
                 print(f'Saque de R${valorS} autorizado!')
-                print(f'Seu novo saldo é de: R$ {self.saldo}')
+                print(f'Seu novo saldo é de: R$ {self.__saldo}')
             else:
                 print(f'Saque R${valorS} não autorizado!')
-                print(f'Saldo insunficiente! Saldo disponivel R${self.saldo}')
+                print(f'Saldo insunficiente! Saldo disponivel R${self.__saldo}')
     
     def deposito(self, valorD):
-        self.saldo += valorD
+        self.__saldo += valorD
 
     def extrato(self):
-        print(f'Seu saldo é de: R$ {self.saldo}')
+        print(f'{self.titular} Seu saldo é de: R$ {self.__saldo}')
 
