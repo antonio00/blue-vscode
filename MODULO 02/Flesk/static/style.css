@@ -1,0 +1,14 @@
+body{
+        background-color: cadetblue;
+        font-family: cursive;
+}
+
+.titulo{
+        font-weight: bold;
+        color: white;
+}
+
+#nome{
+        font-weight: 300;
+        color: springgreen;
+}

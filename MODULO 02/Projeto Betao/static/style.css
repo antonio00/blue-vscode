@@ -1,0 +1,16 @@
+body{
+    background-image: url(https://static8.depositphotos.com/1466059/963/i/600/depositphotos_9631089-stock-photo-grunge-background-with-wild-west.jpg);
+    background-color: darkgrey;
+    font-family: 'Segoe UI', Tahoma;
+    font-size: large;
+    font-weight: bolder;
+    margin: 0;
+    min-height: calc(100vh-40px);
+    padding: 20px 0;
+    
+}
+
+.bloco_info b{
+margin-right: 5px;
+padding: 10;
+}
