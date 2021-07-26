@@ -40,6 +40,7 @@ nav ul li a:hover {
 }
 
 section#home {
+  background-image: url('../img/espaco.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
