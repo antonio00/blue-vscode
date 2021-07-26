@@ -52,4 +52,4 @@ def send():
 if __name__ == '__main__':
    app.run(debug=True)
 
-#teste main ccc7881
+#teste main
