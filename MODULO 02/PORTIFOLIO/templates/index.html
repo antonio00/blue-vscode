@@ -4,26 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css"">
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Meu Portifólio</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="">Saiba mais</a></li>
-            <li><a href="">Projeto</a></li>
-            <li><a href="">Habilidades</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
     
-    <header>
-        <div>
-            <p> Texto</p>
-            <span> Texto</span>
-            
+    <section id="home">
+        <div id="home-text">
+            <p> "Não deixe o barulho da opinião dos outros abafar sua voz interior. E mais importante, tenha a coragem de seguir seu coração e sua intuição. Eles de alguma forma já sabem o que você realmente quer se tornar. Tudo o mais é secundário."
+            </p>
+            <span>Steve Jobs</span>
         </div>
-    </header>
+    </section>
+
+    <section id="sobre">
+        <div id="img-perfil">
+           <img src="../static/img/perfil-blue.png" alt="Imagem de perfil">
+        </div>
+  
+        <div id="texto-sobre">
+           <p>
+              Acredito que toda experiência contribui para evolução do individuo. O profissional e a pessoa que sou hoje é resultado das experiências vividas ao longo da minha jornada. Oriundo de uma cidade pequena no interior do Maranhão, sem muitas oportunidades migrei para a capital do estado. Antes de ter a informática como sustento, tive a oportunidade de aprender em outras áreas, trabalhando como atendente de padaria, motorista de app, e vendedor ambulante. E graças ao network desenvolvido pude focar nos estudos e mergulhar de vez na T.I.
+              
+           </p>
+        </div>
+     </section>
+
+    <section id="projetos">
+        <div>
+           <img src="../static/img/projetc1.png" alt="img-projeto">
+           <h2>The Sims Blue</h2>
+           <p>Projeto de ficção interativa, desenvolvido no Módulo 01 em conjuto com colega Alexandre Martins, sob orientação dos professores Thiago Lima e Vinícius Oliveira. >Linguagem utiliza: Python;</p>
+           <a target="_blank" href="https://github.com/antonio00/sims_the_blue">Veja mais</a>
+        </div>
+  
+        <div>
+           <img src="../static/img/github.png" alt="img-projeto">
+           <h2>Módulo 01 - Blue</h2>
+           <p>Todas as atividades e exercicios de fixação do módulo 01.Módulo focado em lógica de programação, aprendendo Python sob orientação dos professores Thiago Lima e Vinícius</p>
+           <a target="_blank" href="https://github.com/antonio00/blue-vscode">Veja mais</a>
+        </div>
+  
+        <div>
+           <img src="../static/img/list.png" alt="img-projeto">
+           <h2>TO DO LIST</h2>
+           <p>Criação de lista de tarefas, utilizando HMTL, CSS, JAVASCRIPT e Flask. Primeira aplicação <span>upada</span> no Heroku. Projeto sob orientação dos professores Thiago Lima e Maria Eduarda.  </p>
+            <a target="_blank" href="https://aml-todolist.herokuapp.com/">Veja mais</a>
+        </div>     
+     </section>
+
+     <section id="habilidades">
+         <h2>Habilidades Técnicas</h2>
+         <p>HTML 5</p>
+         <div>
+            <span id="html5">70%</span>
+         </div>
+   
+         <p>CSS 3</p>
+         <div>
+            <span id="css3">55%</span>
+         </div>
+   
+         <p>JavaScript</p>
+         <div>
+            <span id="js">55%</span>
+         </div>
+
+         <p>Python</p>
+         <div>
+            <span id="python">60%</span>
+         </div>
+   
+         <p>Flask</p>
+         <div>
+            <span id="flask">55%</span>
+         </div>
+   
+         <p>SQL</p>
+         <div>
+            <span id="sql">10%</span>
+         </div>
+     </section>
+
+     <section id="contato">
+
+        <div id="redes">
+           <h3>Minhas redes sociais </h3>
+           <a href="https://www.linkedin.com/in/antonio-marcos-leite-61b210bb/" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+           </a>
+  
+           <a href="https://github.com/antonio00" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+           </a>
+  
+           <a href="https://www.instagram.com/toim_leite/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+           </a>
+        </div>
+  
+        <h3>Mande uma mensagem</h3>
+  
+        <form action='/send' method="POST">
+           <label for="nome">Nome</label>
+           <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+  
+           <label for="email">E-mail</label>
+           <input type="email" placeholder="Digite seu email" id="email" name="email" required>
+  
+  
+           <label for="mensagem"></label>Mensagem</label>
+           <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+  
+           <button type="submit" id="enviar">Enviar</button>
+  
+        </form>
+
+        <div id="carregamento">
+            <p>Enviando mensagem</p>
+            <div id="loader"></div>
+         </div>
+         
+   
+      </section>
+   
+      <footer>
+         <hr>
+         <p>Todos os direitos reservados: <a id="aml-dev" target="_blank" href="https://www.linkedin.com/in/antonio-marcos-leite-61b210bb/">AML</a> &copy;</p>
+      </footer>
+   
+   
+      <script src='../static/js/script.js'></script>
+
+
+
 
 </body>
 </html>
