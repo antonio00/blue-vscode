@@ -24,3 +24,29 @@ body {
 .txt {
     color: cornsilk;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    padding: 1rem;
+  }
+  
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #71aaff;
+  }
